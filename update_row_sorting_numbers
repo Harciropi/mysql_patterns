@@ -1,0 +1,2 @@
+SET @current_nr = 0;
+UPDATE test_db SET ordinal_number_int = (@current_nr := @current_nr + 1) WHERE label_txt<>'' ORDER BY label_txt;
